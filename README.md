@@ -14,7 +14,7 @@ to about volunteer performance.
 ## Technologies Used:
 
 * HTML
-* JacaScript
+* JavaScript
 * CSS
 * AWS Amplify
 * AWS Lambda
