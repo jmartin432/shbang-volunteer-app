@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sh'Bang Volunteer App</title>
 
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/index.css">
 
   <script src="js/vendor/modernizr.js"></script>
 </head>
@@ -17,15 +16,34 @@
     <h1 class="title">Sh'Bang Volunteers</h1>
     <p>Thank you for all of your hard work. Sh'Bang couldn't happen without you!</p>
     <nav class="site-nav">
-      <label for="team-select">Select Your Team</label>
-      <select name="team-select" id="team-select">
-      </select>
+      <button type="button" id="start-button" onclick="getTeamNames()">Click Here to Get Started</button>
+      <div id="team-select-div" class="hidden">
+        <label for="team-select" id="team-select-label">Select Your Team</label>
+        <select name="team-select" id="team-select">
+
+        </select>
+      </div>
+      <div id="name-select-div" class="hidden">
+        <label for="team-select" id="name-select-label">Find Your Name</label>
+        <select name="team-select" id="name-select">
+
+        </select>
+      </div>
+
     </nav>
+    <section id="site-display">
+      <div id="buckstop-info" class="hidden">
+
+      </div>
+      <div id="schedule-display">
+
+      </div>
+    </section>
   </header>
 
   <section class="schedule-display">
   </section>
 
-  <script src="js/main.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
