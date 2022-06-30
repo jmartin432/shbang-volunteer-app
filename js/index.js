@@ -1,5 +1,5 @@
 async function callLambda() {
-    const url = 'https://fntikl9sah.execute-api.us-east-1.amazonaws.com/prod';
+    const url = 'https://fntikl9sah.execute-api.us-east-1.amazonaws.com/prod/{proxy}';
     const response = await fetch(url, {
         method: 'POST',
         body: {
