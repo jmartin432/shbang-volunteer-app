@@ -2,11 +2,15 @@ body {
 
 }
 
+#team-select-div {
+    display: block;
+}
+
 .hidden {
     display: none;
 }
 
-#start-button, #team-select-div, #name-select-div{
+#start-button{
     margin: 30px;
     display: block;
 }
