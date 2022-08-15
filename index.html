@@ -1,48 +1,47 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sh'Bang Volunteer App</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sh'Bang Volunteer App</title>
 
-  <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 
-  <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
 </head>
 <body class="page-home">
 
-  <header class="site-header">
+<header class="site-header">
     <h1 class="title">Sh'Bang Volunteers</h1>
     <p>Thank you for all of your hard work. Sh'Bang couldn't happen without you!</p>
     <nav class="site-nav">
-      <button type="button" id="start-button" onclick="getTeamNames()">Click Here to Get Started</button>
-      <div id="team-select-div">
-        <label for="team-select" id="team-select-label" class="hidden">Select Your Team</label><br>
-        <select name="team-select" id="team-select" class="hidden">
-        </select>
-      </div>
-      <div id="name-select-div" class="hidden">
-        <label for="name-select" id="name-select-label">Find Your Name</label>
-        <select name="name-select" id="name-select">
-
-        </select>
-      </div>
+        <button type="button" id="start-button" onclick="getTeamNames()">Click Here to Get Started</button>
+        <div id="team-select-div">
+            <select name="team-select" id="team-select" class="hidden" onchange="getVolNames()">
+                <option value="" disabled selected>Choose Your Team</option>
+            </select>
+        </div>
+        <div id="name-select-div">
+            <select name="name-select" id="name-select" class="hidden">
+                <option value="" disabled selected>Choose Your Name</option>
+            </select>
+        </div>
 
     </nav>
     <section id="site-display">
-      <div id="buckstop-info" class="hidden">
+        <div id="buckstop-info" class="hidden">
 
-      </div>
-      <div id="schedule-display">
+        </div>
+        <div id="schedule-display">
 
-      </div>
+        </div>
     </section>
-  </header>
+</header>
 
-  <section class="schedule-display">
-  </section>
+<section class="schedule-display">
+</section>
 
-  <script src="./js/index.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>

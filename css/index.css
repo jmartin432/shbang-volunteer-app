@@ -2,7 +2,7 @@ body {
 
 }
 
-#team-select-div {
+#team-select-div, #name-select-div{
     display: block;
 }
 
