@@ -35,12 +35,17 @@
     </section>
     <section id="volunteer-section">
         <div id="name-select-div">
-            <select name="name-select" id="name-select" class="hidden">
+            <select name="name-select" id="name-select" class="hidden" onchange=refreshSchedule(this.options[this.selectedIndex].value)>
                 <option value="" disabled selected>Choose Your Name</option>
             </select>
         </div>
-        <div id="schedule-display">
 
+        <div id="volunteer-info-div">
+            <div id="schedule-info-div">
+                <ul id="schedule-list">
+
+                </ul>
+            </div>
         </div>
     </section>
 
